@@ -147,7 +147,7 @@ void mdDataSetGetNames(Rcpp::CharacterVector &names, ns4__Axes *axes, int i, boo
 	std::string name = "";
 	std::vector<ns4__Member *> memberList = axes->Axis[axis]->__union_Axis->Tuples->Tuple[i]->Member;
 	for (unsigned j = 0; j < memberList.size(); j++) {
-		name = name + *memberList[j]->Caption + ", ";
+		name = name + *memberList[j]->Caption + "##,## ";
 	}
 	names.push_back(name.substr(0, name.size() - 2));
 }
