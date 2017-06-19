@@ -3,7 +3,7 @@ Type: Package
 Title: XMLA/MDX cube tool for R
 Version: 1.0.1
 Date: 2013-08-19
-Author: George Chow; Norris Lee
+Author: George Chow; Norris Lee, small mod by Niklas Willrich
 Maintainer: George Chow <georgec@simba.com>
 Description: Enable R to source data from an OLAP cube via XMLA by specifying an MDX query.
 License: GPL-2 | GPL-3
