@@ -269,7 +269,7 @@ RcppExport SEXP RXMLAExecute(SEXP handle, SEXP query, SEXP rPropertiesString, SE
       resultDataFrame.attr("names") = colNames;
       service.destroy();
       
-      return Rcpp::List::create(resultDataFrame, "test");
+      return resultDataFrame;
     }
     // Parse RowSet
     else if (response.return_->ns2__root != NULL 
