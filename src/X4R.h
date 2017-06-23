@@ -27,7 +27,7 @@ RcppExport SEXP RXMLAConnect(SEXP connection, SEXP uid, SEXP pw);
 
 RcppExport SEXP RXMLAClose(SEXP handle);
 
-RcppExport SEXP RXMLAExecute(SEXP handle, SEXP query, SEXP rPropertiesString);
+RcppExport SEXP RXMLAExecute(SEXP handle, SEXP query, SEXP rPropertiesString, SEXP separatorString);
 
 RcppExport SEXP RXMLADiscover(SEXP handle, SEXP request, SEXP rRestrictionsString, SEXP rPropertiesString);
 

@@ -13,16 +13,6 @@ xmlaClose <- function(handle)
 	.Call("RXMLAClose", attr(handle, "Pointer"))
 }
 
-xmlaExecute <- function(handle, query, propertyList="")
-{
-	if(!xmlaValidHandle(handle))
-		stop("first argument is not an open XMLA handle")
-	resultList <- .Call("RXMLAExecute", attr(handle, "Pointer"), as.character(query), as.character(propertyList))
-	if(class(resultList) == "list")
-		resultDF <- data.frame(resultList, check.names=FALSE)
-	else resultList
-}
-
 xmlaDiscover <- function(handle, requestType, restrictionList="", propertyList="")
 {
 	if(!xmlaValidHandle(handle))
@@ -31,6 +21,16 @@ xmlaDiscover <- function(handle, requestType, restrictionList="", propertyList="
 	if(class(resultList) == "list")
 		resultDF <- data.frame(resultList, check.names=FALSE)
 	else resultList
+}
+
+xmlaExecute <- function(handle, query, propertyList="", dimSep = ", ")
+{
+  if(!xmlaValidHandle(handle))
+    stop("first argument is not an open XMLA handle")
+  resultList <- .Call("RXMLAExecute", attr(handle, "Pointer"), as.character(query), as.character(propertyList), dimSep)
+  	if(class(resultList) == "list")
+  		resultDF <- data.frame(resultList, check.names=FALSE)
+  	else resultList
 }
 
 print.XMLA <- function(x, ...)

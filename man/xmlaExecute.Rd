@@ -12,6 +12,7 @@
     \item{handle}{Connection object of class "XMLA" returned by \code{xmlaConnect}.}
     \item{query}{A valid MDX query to be executed on the XMLA server.}
     \item{propertyList}{Semicolon separated key=value pairs of properties. See example.}
+    \item{dimSep}{Separator string for concatenating dimensions. Default is ", ".}
 }
 \details{
     \code{xmlaExecute} calls XMLA's Execute method to executed a specified MDX command. 
