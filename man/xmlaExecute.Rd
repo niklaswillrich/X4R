@@ -6,13 +6,13 @@
     Executes an MDX command and returns its result-set from the XMLA web service.
 }
 \usage{
-    xmlaExecute(handle, query, propertyList="")
+    xmlaExecute(handle, query, propertyList="", dimSep=", ")
 }
 \arguments{
     \item{handle}{Connection object of class "XMLA" returned by \code{xmlaConnect}.}
     \item{query}{A valid MDX query to be executed on the XMLA server.}
     \item{propertyList}{Semicolon separated key=value pairs of properties. See example.}
-    \item{dimSep}{Separator string for concatenating dimensions. Default is ", ".}
+    \item{dimSep}{Separator string for concatenating dimensions.}
 }
 \details{
     \code{xmlaExecute} calls XMLA's Execute method to executed a specified MDX command. 
