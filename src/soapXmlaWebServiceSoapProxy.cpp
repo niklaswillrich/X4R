@@ -129,7 +129,7 @@ int XmlaWebServiceSoapProxy::Execute(const char *endpoint, const char *soap_acti
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService";
+		soap_endpoint = "";
 	if (soap_action == NULL)
 		soap_action = "urn:schemas-microsoft-com:xml-analysis:Execute";
 	soap->encodingStyle = NULL;
@@ -184,7 +184,7 @@ int XmlaWebServiceSoapProxy::Discover(const char *endpoint, const char *soap_act
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService";
+		soap_endpoint = "";
 	if (soap_action == NULL)
 		soap_action = "urn:schemas-microsoft-com:xml-analysis:Discover";
 	soap->encodingStyle = NULL;
@@ -239,7 +239,7 @@ int XmlaWebServiceSoapProxy::Execute_(const char *endpoint, const char *soap_act
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService";
+		soap_endpoint = "";
 	if (soap_action == NULL)
 		soap_action = "urn:schemas-microsoft-com:xml-analysis:Execute";
 	soap->encodingStyle = NULL;
@@ -294,7 +294,7 @@ int XmlaWebServiceSoapProxy::Discover_(const char *endpoint, const char *soap_ac
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService";
+		soap_endpoint = "";
 	if (soap_action == NULL)
 		soap_action = "urn:schemas-microsoft-com:xml-analysis:Discover";
 	soap->encodingStyle = NULL;

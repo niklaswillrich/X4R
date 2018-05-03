@@ -2592,14 +2592,14 @@
 
 		<wsdl:port binding="tns:XmlaWebServiceSoap" name="XmlaWebServiceSoap">
 
-			<soap:address location="http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService"/>
+			<soap:address location=""/>
 
 		</wsdl:port>
 
 		<wsdl:port binding="tns:XmlaWebServiceSoap12" name="XmlaWebServiceSoap12">
 
 
-			<soap12:address location="http://209.139.232.176:8282/M4OXmlaWebService/services/XmlaWebService"/>
+			<soap12:address location=""/>
 
 		</wsdl:port>
 
